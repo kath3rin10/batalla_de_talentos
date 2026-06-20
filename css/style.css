@@ -1,0 +1,189 @@
+css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:rgba(0,0,0,.4);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+#traducir{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.hero{
+    height:100vh;
+    position:relative;
+}
+
+.hero video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+
+.contenidoHero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.contenidoHero h1{
+    font-size:70px;
+}
+
+.contenidoHero a{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff4fa3;
+    padding:15px 30px;
+    border-radius:40px;
+    color:white;
+    text-decoration:none;
+}
+
+.estadisticas{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:50px;
+}
+
+.numero{
+    text-align:center;
+}
+
+.numero h2{
+    font-size:50px;
+    color:#ff4fa3;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.glass{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.tags span{
+    background:#ff4fa3;
+    padding:12px 20px;
+    border-radius:40px;
+}
+
+.glosario{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+}
+
+#btnTop{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
