@@ -24,21 +24,17 @@
             </div>
 
             <ul>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#palabras">Palabras Clave</a></li>
-                <li><a href="#glosario">Glosario</a></li>
-                <li><a href="#conclusion">Conclusión</a></li>
+                <li><a id="menuExp" href="#experiencia">Experiencia</a></li>
+                <li><a id="menuGaleria" href="#galeria">Galería</a></li>
+                <li><a id="menuPalabras" href="#palabras">Palabras Clave</a></li>
+                <li><a id="menuGlosario" href="#glosario">Glosario</a></li>
+                <li><a id="menuConclusion" href="#conclusion">Conclusión</a></li>
             </ul>
 
             <button id="traducir">🌎 EN</button>
         </nav>
 
         <div class="hero">
-
-            <video autoplay muted loop>
-                <source src="video.mp4" type="video/mp4">
-            </video>
 
             <div class="overlay"></div>
 
@@ -49,7 +45,7 @@
                     Arte, música y creatividad en una experiencia inolvidable.
                 </p>
 
-                <a href="#experiencia">Descubrir Más</a>
+                <a id="btnDescubrir" href="#experiencia">Descubrir Más</a>
             </div>
 
         </div>
@@ -57,10 +53,10 @@
     </header>
 
     <section id="experiencia">
-        <h2>Mi Experiencia</h2>
+        <h2 id="expTitulo">Mi Experiencia</h2>
 
         <div class="glass">
-            <p>
+            <p id="textoExperiencia">
                 Durante la actividad de talentos realizada en el SENA observé
                 presentaciones de dibujo, canto, baile, guitarra y saxofón.
                 Fue una experiencia enriquecedora que permitió conocer las
@@ -70,94 +66,90 @@
         </div>
     </section>
 
-    <section id="galeria">
+<section id="galeria">
 
-        <h2>Galería de Talentos</h2>
+    <h2 id="galeriaTitulo">Galería de Talentos</h2>
 
-        <div class="galeria">
+    <div class="slider-container">
 
-            <div class="card">
-                <img src="img/dibujo.png">
-                <h3>🎨 Dibujo</h3>
-            </div>
+        <button id="anterior" class="btn-slider">❮</button>
 
-            <div class="card">
-                <img src="img/canto.png">
-                <h3>🎤 Canto</h3>
-            </div>
+        <img
+            id="imagenGaleria"
+            src="png/imagen1.png"
+            alt="Galería de Talentos"
 
-            <div class="card">
-                <img src="img/baile.png">
-                <h3>💃 Baile</h3>
-            </div>
+             id="imagenGaleria"
+            src="png/imagen2.png"
+            alt="Galería de Talentos"
 
-            <div class="card">
-                <img src="img/guitarra.png">
-                <h3>🎸 Guitarra</h3>
-            </div>
+             id="imagenGaleria"
+            src="png/imagen3.png"
+            alt="Galería de Talentos"
 
-            <div class="card">
-                <img src="img/saxofon.png">
-                <h3>🎷 Saxofón</h3>
-            </div>
+             id="imagenGaleria"
+            src="png/imagen4.png"
+            alt="Galería de Talentos"
 
-        </div>
+             id="imagenGaleria"
+            src="png/imagen5.png"
+            alt="Galería de Talentos"
 
-    </section>
+             id="imagenGaleria"
+            src="png/imagen6.png"
+            alt="Galería de Talentos"
+
+             id="imagenGaleria"
+            src="png/imagen7.png"
+            alt="Galería de Talentos"
+
+             id="imagenGaleria"
+            src="png/imagen8.png"
+            alt="Galería de Talentos"
+
+             id="imagenGaleria"
+            src="png/imagen9.png"
+            alt="Galería de Talentos"
+
+             id="imagenGaleria"
+            src="png/imagen10.png"
+            alt="Galería de Talentos">
+
+        <button id="siguiente" class="btn-slider">❯</button>
+
+    </div>
+
+</section>
 
     <section id="palabras">
 
-        <h2>Palabras Clave</h2>
+        <h2 id="palabrasTitulo">Palabras Clave</h2>
 
         <div class="tags">
-            <span>Creatividad</span>
-            <span>Arte</span>
-            <span>Música</span>
-            <span>Talento</span>
-            <span>Disciplina</span>
-            <span>Innovación</span>
-            <span>Expresión</span>
-            <span>Aprendizaje</span>
+            <span id="tag1">Creatividad</span>
+            <span id="tag2">Arte</span>
+            <span id="tag3">Música</span>
+            <span id="tag4">Talento</span>
+            <span id="tag5">Disciplina</span>
+            <span id="tag6">Innovación</span>
+            <span id="tag7">Expresión</span>
+            <span id="tag8">Aprendizaje</span>
         </div>
 
     </section>
 
-    <section id="glosario">
-
-        <h2>Glosario</h2>
-
-        <div class="glosario">
-
-            <div class="glass">
-                <h3>Talento</h3>
-                <p>Capacidad especial para realizar una actividad.</p>
-            </div>
-
-            <div class="glass">
-                <h3>Creatividad</h3>
-                <p>Habilidad para generar ideas innovadoras.</p>
-            </div>
-
-            <div class="glass">
-                <h3>Guitarra</h3>
-                <p>Instrumento musical de cuerdas.</p>
-            </div>
-
-            <div class="glass">
-                <h3>Saxofón</h3>
-                <p>Instrumento musical de viento.</p>
-            </div>
-
-        </div>
+    <section id="glosario"> 
+        <h2 id="glosarioTitulo">Glosario</h2> 
+        <div id="contenidoGlosario"></div>
 
     </section>
 
     <section id="conclusion">
 
-        <h2>Conclusión</h2>
+        <h2 id="conclusionTitulo">Conclusión</h2>
 
         <div class="glass">
-            <p>
+            <p id="textoConclusion">
                 Esta experiencia permitió valorar el talento artístico de los
                 aprendices y reconocer la importancia de la creatividad dentro
                 del proceso formativo. Las actividades culturales fortalecen la
@@ -168,7 +160,7 @@
     </section>
 
     <footer>
-        <p>© 2026 SENA Talent Show - Kathe</p>
+        <p id="footerTexto">© 2026 SENA Talent Show - Kathe</p>
     </footer>
 
     <script src="js/script.js"></script>
